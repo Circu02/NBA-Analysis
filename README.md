@@ -52,4 +52,4 @@ Open it in Tableau Desktop or the free Tableau Public app.
 ```bash
 pip install pandas numpy scikit-learn matplotlib beautifulsoup4 requests ftfy nba_api
 ```
-Open `NBA_Performance_Analysis_Project.ipynb` and run all cells from top to bottom. The data collection cells create the CSV files that the analysis, KNN, and SQL sections use. The CSVs are also included in this repo, so you can skip the scraping and API cells and run the analysis directly.
+Open `NBA_Performance_Analysis_Project.ipynb` and run all cells from top to bottom. The data collection cells create the CSV files that the analysis, KNN, and SQL sections use. The CSVs are also included in the `data/` folder, so you can skip the scraping and API cells and run the analysis directly.
