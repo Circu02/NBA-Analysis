@@ -36,8 +36,20 @@ The notebook's **SQL Analysis** section loads all five cleaned datasets into a S
 - **K-Nearest Neighbors (KNN)** predicts a season's career phase from performance stats alone, without age. It uses feature scaling, chooses *k* by 5-fold cross-validation, evaluates on a held-out test set, and shows a confusion matrix. It correctly classified 55% of test seasons, compared with a 36% baseline.
 - **Linear regression** rates each season's award candidates from their stats, and those ratings are compared with the actual MVP, DPOY, and Finals MVP winners.
 
+## Tableau dashboard
+`tableau/NBA_Greats_Dashboard.twbx` is a packaged Tableau workbook (data included) with two dashboards:
+- **Overview:** playoff vs. regular-season TS%, difficulty of Finals won (betting odds), peak season by BPM, award resumes, league 3-point attempt rate by decade, and how often award winners were the statistical best.
+- **Career Arcs:** BPM aging curves, dominance vs. same-position peers (z-scores), and career Win Shares (longevity).
+
+Open it in Tableau Desktop or the free Tableau Public app.
+
+<!-- Add a screenshot and your Tableau Public link here once published, e.g.
+![Dashboard](tableau/dashboard.png)
+[View on Tableau Public](https://public.tableau.com/...)
+-->
+
 ## How to run
 ```bash
 pip install pandas numpy scikit-learn matplotlib beautifulsoup4 requests ftfy nba_api
 ```
-Open `NBA_Performance_Analysis_Project.ipynb` and run all cells from top to bottom. The data collection cells create the CSV files that the analysis, KNN, and SQL sections use.
+Open `NBA_Performance_Analysis_Project.ipynb` and run all cells from top to bottom. The data collection cells create the CSV files that the analysis, KNN, and SQL sections use. The CSVs are also included in this repo, so you can skip the scraping and API cells and run the analysis directly.
